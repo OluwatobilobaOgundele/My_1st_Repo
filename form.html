@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <header>
+     <nav>
+        <ul>
+            <li><a href="./Assignment_1/index.html">Home</a></li>
+            <li> <a href="../form.html">Form Page</a></li> 
+            <li> <a href="./Table.html">Table</a></li> 
+            <li> <a href="./medial.html">Media</a></li> 
+       </ul>
+     </nav>
+    </header>
+    <main class="main">
+    <section class="mm" id="mn">
+        <div>
+            <img
+            srcset="asset/image/altSchool300w.jpg 300w, asset/altschool_img1.png 400w"
+            sizes="(max-width: 990px) 300px,
+                   400px"
+            src="./asset/altschool_img1.png"
+            alt="Copied from Altschool" />
+        </div>
+     <div>
+     <h1 class="h1"> Learn highly sought skills without hassle.</h1>
+  </div>
+  <footer>
+    <div class="contact">
+        <a href="https://x.com"><img src="./asset/image/x.png" alt="X handle"></a>
+        <a href="https://instagrame.com"><img src="./asset/image/insta.png" alt="Instagram handle"></a>
+        <a href="https://Facebook.com"><img src="./asset/image/facebook.png" alt="Facebook handle"></a>
+        <a href="https://linkedin.com"><img src="./asset/image/linkedin.png" alt="Linkedin handle"></a>
+    </div>
+    <a href="Tel:0800Altschool" class="tel">Tel: 0800ALTSCHOOL</a>
+    <SPAn class="copy">&copy; Altschool Africa All Right Reserved.</SPAn>
+  </footer>
+
+
+    </section>
+<section class="mm" id="mm">
+    <p class="par">Already an altschooller? 
+        <a href="">Sign in</a>
+     </p>
+ <div class="formHead" role="form">
+ <h1>Sign up</h1>
+    <p>Take the next step to apply at Altschool Africa</p>
+    </div>
+    <form action="/submit-form" method="post">
+        <div class="flex">
+    <div class="name">
+        <div>
+        <label for="firstname">Firstname</label><br>
+        <input type="text" id="firstname" name="firstname" required placeholder="Firstname"><br><br>
+        </div>
+        <div>
+        <label for="lastname">Lastname:</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Lastname" required><br><br>
+        </div>
+    </div>
+    <div class="name">
+        <div>
+        <label for="Gender">Gender</label><br>
+        <select name="Gender" id="Gender" required>
+            <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br></div>
+    <div>
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+    </div>
+    </div>
+    <div class="name">
+            <div>
+        <label for="Email">Email Address</label><br>
+        <input type="email" id="Email" name="email" required><br><br>
+    </div>
+    <div>
+        <label for="tel">Phone number</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="08060123456" required> <br><br>
+    </div>
+      </div>
+      <div class="name">
+        <div>
+        <label for="country">Country:</label><br>
+    <select name="country" id="country" required>
+        <option value="">Select Country</option>
+        <option value="usa">United states</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United kingdom</option>
+        <option value="Ang">Angola</option>
+        <option value="Sth_A ">South Africa</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+       
+    </select><br><br>
+</div>
+<div>
+    <label for="State/City_of_Residence">State/City of Residence</label><br>
+        <input type="text" id="State/City_of_Residence" name="State/City_of_Residence" required placeholder="Enter your State of Residence"><br><br>
+        </div>
+        </div>
+        <div class="name">
+            <div>
+        <label for="How_did_you_hear_about_us">How did you hear about us</label><br>
+             </div>
+    <div>
+        <select name="How_did_you_hear_about_us" id="How_did_you_hear_about_us">
+        <option value="Select">Select channel</option>
+        <option value="Twitter">Twitter</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Linkedin">Linkedin</option>
+        <option value="Newspaper">Newspaper</option>
+    </select><br><br>
+</div>
+</div>
+<div class="name">
+    <div>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+</div>
+<div>
+        <label for="Confirm_password">Confirm Password</label><br>
+        <input type="password" id="Confirm_password" name="password" placeholder="Enter password again" required><br><br>
+    </div>
+</div>
+</div>
+    <p>By clicking continue, I agree to  <a href="">Terms</a> of Use and acknowledge that I
+        have read the  <a href="">Privacy Policy</a>.</p>
+        <button>submit</button>
+    </form>
+
+</section>
+</main>
+</body>
+</html>

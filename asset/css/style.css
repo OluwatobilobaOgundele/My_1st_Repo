@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(255, 242, 248);
+    color: rgb(15, 15, 25);
+    overflow-x: hidden;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: block;
+    padding: 10px 0;
+    color: rgb(4, 9, 70);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: royalblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    display: block;
+}
+.h1 {
+    font-size: 2.18rem;
+    line-height: 40px;
+}
+
+.formHead {
+    text-align: left;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00b37d;
+}
+
+footer {
+       display: block;
+    text-align: center;
+    padding: 40px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 15px;
+    gap: 10px;
+
+}
+.name:nth-child(5) {
+    display: block;
+
+}
+#mn {
+    height: 100vh;
+    grid-area: hd;
+}
+#mm {
+    grid-area: mn;
+}
+.mm:first-child{
+   padding-block: 20px;
+   flex-grow: 5;
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+    "hd hd hd hd mn mn mn mn mn"
+    "hd hd hd hd mn mn mn mn mn"
+    "hd hd hd hd mn mn mn mn mn" ;
+}
+@media(max-width : 770px){
+    #mn {
+        display: none;
+    }
+    .name {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .main {
+        display: flex;
+    }
+
+}
+.par {
+    padding-bottom: 30px;
+    text-align: right;
+    font-weight: bolder;
+}
