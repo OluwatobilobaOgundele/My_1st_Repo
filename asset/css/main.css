@@ -155,9 +155,16 @@ div img {
     border-bottom: #200f0f;
 
 }
-#Reason, #Goals {
+#Reason {
    text-align: center;
 }
+#Goals {
+    margin: 0 60 0 40px;
+}
+#Goals h2 {
+    text-align: center;
+}
+
 .goals {
     max-width: 500px;
     margin: 0px auto;
