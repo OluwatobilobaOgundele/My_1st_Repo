@@ -2,7 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     min-width: fit-content;
-    background-color: #3b0cbc;
+    background-color: rgb(36, 225, 238);
+    background-image: linear-gradient(to left,  rgb(132, 160, 200), rgb(36, 225, 238));
     color: #333;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -23,7 +24,7 @@ body {
 .main {
     padding: 20px;
     margin: 0;
-    background-color: rgb(36, 225, 238);
+    
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     grid-area: mn;
 }
@@ -34,10 +35,17 @@ body {
     text-align: center;
     padding: 1rem 0;
     grid-area: ft;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   gap: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+.anime {
+    font-size: 30px;
+}
+#header {
+    position: fixed;
+    max-width: 26%;
 }
 
 nav ul {
@@ -76,6 +84,7 @@ nav ul li a:hover {
 
 #skills {
     margin-top: 4rem;
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: 200px 300px;
     gap: 2rem;
@@ -118,6 +127,8 @@ footer details summary {
 }
 
 footer details ul {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
 }
@@ -152,11 +163,13 @@ div img {
     border-radius: 20px;
 }
 #Bio {
-    border-bottom: #200f0f;
+    border-bottom: solid 3px  #333;
 
 }
 #Reason {
    text-align: center;
+   border-bottom: solid 3px  #333;
+
 }
 #Goals {
     margin: 0 60 0 40px;
