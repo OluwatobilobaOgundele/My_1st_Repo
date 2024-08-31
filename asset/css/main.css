@@ -201,8 +201,15 @@ div img {
             display: flex;
             justify-content: space-evenly;
          }
+         #header {
+            position: static;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+         }
     nav {
         display: inline;
+        max-width: 45%;
     }
     .my {
         margin: auto;
